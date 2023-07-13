@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 number = 3.14159
-limit_float =round(number,2)
-print('Float:',limit_float)
+print("Float: {0:.2f}".format(number))
