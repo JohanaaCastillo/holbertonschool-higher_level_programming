@@ -4,5 +4,4 @@ def safe_list_integer(value):
         print("{:d}".format(value), end='')
         return True
     except (ValueError, TypeError):
-        pass
         return False
