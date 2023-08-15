@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def safe_list_integers(value):
+def safe_list_integer(value):
     try:
         print("{:d}".format(value), end='')
         return True
