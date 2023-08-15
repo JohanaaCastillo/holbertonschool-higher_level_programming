@@ -2,15 +2,15 @@
 """This is a module for square"""
 
 
-class Square:
+class Square():
     """
     Creates a square class object
     """
-    def __init__(self, size):
+    def __init__(self, size=0):
         self.size = size
 
     @property
-    def size(self):
+    def size(self,):
         """ These are a getter and setter when to get
         the current size of the square"""
         return self.__size
@@ -33,3 +33,11 @@ class Square:
         Returns area of square based on size
         """
         return (self.__size*self.__size)
+
+    def my_print(self):
+        if (self.size):
+            for x in range(self.size):
+                print("#" * self.size, end='')
+                print()
+        else:
+            print()
