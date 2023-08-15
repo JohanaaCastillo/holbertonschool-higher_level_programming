@@ -8,25 +8,25 @@ class Square:
     """
     def __init__(self, size):
         self.size = size
-    
+
     @property
     def size(self):
-        """ These are a getter and setter when to get/set
+        """ These are a getter and setter when to get
         the current size of the square"""
         return self.__size
 
     @size.setter
-    def __init__(self, size=0):
+    def __init__(self, value):
         """
         Initializes instance of a square
         Arguments:
             size
         """
-        if (type(size) is not int):
+        if (type(value) is not int):
             raise TypeError("size must be an integer")
-        if (size < 0):
+        if (ValueError < 0):
             raise ValueError("size must be >= 0")
-        self.__size = size
+        self.__size = value
 
     def area(self):
         """
