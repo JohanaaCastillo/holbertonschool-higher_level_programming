@@ -22,7 +22,7 @@ class Square:
         Arguments:
             size
         """
-        if (type(value) is not int):
+        if (not type(value) is int):
             raise TypeError("size must be an integer")
         if (ValueError < 0):
             raise ValueError("size must be >= 0")
