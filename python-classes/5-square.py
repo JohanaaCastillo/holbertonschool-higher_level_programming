@@ -10,9 +10,8 @@ class Square():
         self.size = size
 
     @property
-    def size(self,):
-        """ These are a getter and setter when to get
-        the current size of the square"""
+    def size(self):
+        """ Gets size of square"""
         return self.__size
 
     @size.setter
@@ -24,7 +23,7 @@ class Square():
         """
         if (type(value) is not int):
             raise TypeError("size must be an integer")
-        if (ValueError < 0):
+        if (value < 0):
             raise ValueError("size must be >= 0")
         self.__size = value
 
