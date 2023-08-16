@@ -2,7 +2,7 @@
 """This is a module for square"""
 
 
-class Square():
+class Square:
     """
     Creates a square class object
     """
