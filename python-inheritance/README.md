@@ -23,3 +23,7 @@
 📁 10. Square #1
 
 📁 11. Square #2
+
+📁 12. My integer
+
+📁 13. Can I?
