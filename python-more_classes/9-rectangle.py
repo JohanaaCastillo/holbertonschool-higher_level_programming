@@ -100,6 +100,7 @@ class Rectangle:
 
         """
         return ("Rectangle({ }, { })".format(self.width, self.height))
+    
     def __del__(self):
         """modifies del object
 
