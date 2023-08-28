@@ -1,39 +1,22 @@
-The ``0-add_integer`` module
-======================
+#!/usr/bin/python3
+"""Module for add_integer
+"""
 
-Using ``add_integer``
--------------------
 
-This test text file in for function add_integer.  First import
-``add_integer`` from the ``0-add_integer`` module:
+def add_integer(a, b=98):
+    """Function to add two integers.
 
-    >>> add_integer = __import__('0-add_integer').add_integer
+    Args:
+        a (int, float): is a number.
+        b (int, float): is number to add to a.
 
-Now use it:
-
-    >>> add_integer(1, 2)
-    3
-    >>> add_integer(100, -2)
-    98
-    >>> add_integer(2)
-    100
-    >>> add_integer(100.3, -2)
-    98
-    >>> add_integer(4, "School")
-    Traceback (most recent call last):
-    ...
-    TypeError: b must be an integer
-    >>> add_integer(None)
-    Traceback (most recent call last):
-    ...
-    TypeError: a must be an integer
-    >>> add_integer(4, -500.2)
-    -496
-    >>> add_integer(4, None)
-    Traceback (most recent call last):
-    ...
-    TypeError: b must be an integer
-    >>> add_integer()
-    Traceback (most recent call last):
-    ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
+    Returns:
+        int: The value of a add b. or Error message if
+        a or b is not integer or float.
+    """
+    if type(a) is not int and type(a) is not float:
+        raise TypeError("a must be an integer")
+    if type(b) is not int and type(b) is not float:
+        raise TypeError("b must be an integer")
+    else:
+        return int(a) + int(b)
